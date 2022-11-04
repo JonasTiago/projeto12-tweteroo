@@ -28,7 +28,10 @@ let userActive = {
 };
 
 app.get("/tweets", (req, res) => {
-  res.send(tweets);
+
+  const lastTenTweets = tweets.filter((tweet, indx) => indx < 10)
+
+  res.status(200).send(lastTenTweets);
 });
 
 app.post("/sign-up", (req, res) => {
@@ -56,14 +59,14 @@ app.post("/tweets", (req, res) => {
     res.status(422).send("Preencha todos os campos!");
     return;
   }
-  
+
   const newTweet = {
     username,
     avatar: userActive.avatar,
     tweet,
   };
 
-  tweets.push(newTweet);
+  tweets.unshift(newTweet);
 
   res.status(201).send("ok");
 });
