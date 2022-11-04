@@ -56,12 +56,14 @@ app.post("/tweets", (req, res) => {
     res.status(422).send("Preencha todos os campos!");
     return;
   }
-
-  tweets.push({
+  
+  const newTweet = {
     username,
     avatar: userActive.avatar,
     tweet,
-  });
+  };
+
+  tweets.push(newTweet);
 
   res.status(201).send("ok");
 });
