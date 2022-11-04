@@ -20,17 +20,49 @@ const tweets = [
   },
 ];
 
+const users = [];
+
+let userActive = {
+  username: "",
+  avatar: "",
+};
+
 app.get("/tweets", (req, res) => {
   res.send(tweets);
 });
 
 app.post("/sign-up", (req, res) => {
+  const { username, avatar } = req.body;
+
+  userActive = {
+    username: username,
+    avatar: avatar,
+  };
+
+  users.push(userActive);
+
+  if (!username || !avatar) {
+    res.status(422).send("Preencha todos os campos!");
+    return;
+  }
+
   res.status(200).send("ok");
 });
 
 app.post("/tweets", (req, res) => {
-  const tweet = req.body;
-  tweets.push(tweet);
+  const { username, tweet } = req.body;
+
+  if (!tweet) {
+    res.status(422).send("Preencha todos os campos!");
+    return;
+  }
+
+  tweets.push({
+    username,
+    avatar: userActive.avatar,
+    tweet,
+  });
+
   res.status(201).send("ok");
 });
 
