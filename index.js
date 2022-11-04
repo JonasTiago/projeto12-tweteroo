@@ -25,13 +25,13 @@ app.get("/tweets", (req, res) => {
 });
 
 app.post("/sign-up", (req, res) => {
-  res.status(201).send("ok");
+  res.status(200).send("ok");
 });
 
 app.post("/tweets", (req, res) => {
   const tweet = req.body;
   tweets.push(tweet);
-  res.send("ok");
+  res.status(201).send("ok");
 });
 
 app.listen(5000, () => console.log("Serve running port: 5000"));
