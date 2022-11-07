@@ -7,13 +7,181 @@ app.use(express.json());
 
 const tweets = [
   {
-    username: "bobesponja",
+    username: "0",
     avatar:
       "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
     tweet: "eu amo o hub",
   },
   {
     username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "10",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "11",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "20",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "21",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso",
+  },
+  {
+    username: "patric",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "eu amo o hub",
+  },
+  {
+    username: "bobesponja",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "trietse demais com isso. kk",
+  },
+  {
+    username: "lulamolusco",
+    avatar:
+      "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
+    tweet: "raiva matinal",
+  },
+  {
+    username: "30",
     avatar:
       "https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?quality=70&strip=info",
     tweet: "trietse demais com isso",
@@ -28,14 +196,38 @@ let userActive = {
 };
 
 app.get("/tweets", (req, res) => {
+  const numbPage = parseInt(req.query.page);
 
-  const lastTenTweets = tweets.filter((tweet, indx) => indx < 10)
+  if (numbPage < 1) {
+    res.status(400).send("Informe uma página válida!");
+    return;
+  }
+
+  const maxTweets = 10 * numbPage;
+  const minTweets = maxTweets - 10;
+
+  const lastTenTweets = tweets.filter(
+    (tweet, indx) => minTweets <= indx && indx < maxTweets
+  );
 
   res.status(200).send(lastTenTweets);
 });
 
+app.get("/tweets/:id", (req, res) => {
+  const username = req.params.id;
+
+  const tweetsUser = tweets.filter((tweet) => tweet.username === username);
+
+  res.send(tweetsUser);
+});
+
 app.post("/sign-up", (req, res) => {
   const { username, avatar } = req.body;
+
+  if (!username || !avatar) {
+    res.status(400).send("Preencha todos os campos!");
+    return;
+  }
 
   userActive = {
     username: username,
@@ -44,19 +236,15 @@ app.post("/sign-up", (req, res) => {
 
   users.push(userActive);
 
-  if (!username || !avatar) {
-    res.status(422).send("Preencha todos os campos!");
-    return;
-  }
-
-  res.status(200).send("ok");
+  res.status(201).send("ok");
 });
 
 app.post("/tweets", (req, res) => {
-  const { username, tweet } = req.body;
+  const username = req.headers.user
+  const { tweet } = req.body;
 
   if (!tweet) {
-    res.status(422).send("Preencha todos os campos!");
+    res.status(400).send("Preencha todos os campos!");
     return;
   }
 
@@ -71,4 +259,4 @@ app.post("/tweets", (req, res) => {
   res.status(201).send("ok");
 });
 
-app.listen(5000, () => console.log("Serve running port: 5000"));
+app.listen(5000, () => console.log("App running port: 5000"));
